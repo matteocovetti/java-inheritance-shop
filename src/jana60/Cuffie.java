@@ -39,7 +39,7 @@ public class Cuffie extends Prodotto {
 		} else {
 			categoria = "Cablate";
 		}
-		return super.toString() + "Colore cuffie " + colore + " - " + categoria;
+		return super.toString() + " Colore cuffie: " + colore + " - " + categoria;
 	}
 
 }

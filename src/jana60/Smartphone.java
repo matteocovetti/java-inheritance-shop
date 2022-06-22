@@ -4,10 +4,10 @@ public class Smartphone extends Prodotto {
 
 	// attributi
 	private long imei;
-	private String memoria;
+	private int memoria;
 
 	// costruttori
-	public Smartphone(int codice, String nome, String marca, double prezzo, int iva, long imei, String memoria) {
+	public Smartphone(int codice, String nome, String marca, double prezzo, int iva, long imei, int memoria) {
 		super(codice, nome, marca, prezzo, iva);
 		this.imei = imei;
 		this.memoria = memoria;
@@ -15,11 +15,11 @@ public class Smartphone extends Prodotto {
 	}
 
 	// getter e setter
-	public String getMemoria() {
+	public int getMemoria() {
 		return memoria;
 	}
 
-	public void setMemoria(String memoria) {
+	public void setMemoria(int memoria) {
 		this.memoria = memoria;
 	}
 
@@ -30,7 +30,7 @@ public class Smartphone extends Prodotto {
 	// override
 	@Override
 	public String toString() {
-		return super.toString() + " - " + "IMEI: " + imei + " - " + "Memoria di: " + memoria;
+		return super.toString() + " - " + "IMEI: " + imei + " - " + "Memoria di: " + memoria + "GB";
 	}
 
 }
